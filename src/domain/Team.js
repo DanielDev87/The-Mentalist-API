@@ -1,8 +1,8 @@
 const {EntitySchema} = require('typeorm');
 
 module.exports = new EntitySchema({
-    name: 'Character',
-    tableName: 'characters',
+    name: 'Team',
+    tableName: 'teams',
     columns: {
         id: {
             primary: true,
@@ -23,11 +23,10 @@ module.exports = new EntitySchema({
         },
     },
     relations: {
-        equipo: {
-            type: 'many-to-one', // Un personaje pertenece a un solo equipo
-            target: 'Equipo', // Relaciona con la entidad Equipo
-            joinColumn: { name: 'equipo_id' },
-            nullable: true, // Un personaje puede no pertenecer a un equipo
+        characters: {
+            type: 'one-to-many', // Un equipo tiene muchos personajes
+            target: 'Character', // Relaciona con la entidad Character
+            mappedBy: 'team', // El lado opuesto de la relación se maneja por 'team' en la entidad Character
         },
     },
 });
