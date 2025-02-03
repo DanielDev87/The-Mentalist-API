@@ -1,6 +1,6 @@
 # The Mentalist API
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_The Mentalist API es un API-REST desarrollada con el propósito de que los fanaticos de la serie puedan interactuar con la información de sus personajes y a los desarrolladores acceder a recursos de calidad para pruebas en sus proyectos web o moviles, está será la primera versión y espero poder contar con el apoyo de esta comunidad, cualquier tipo de contribución será bien recibida. DanielDev87 🤓_
 
 ## Comenzando 🚀
 
@@ -12,10 +12,9 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 ### Pre-requisitos 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
-Python en la version minima 3.12
+Node JS en la version minima 20.15.0
 Postgresql
-Todos los paqueets instalados en el entorno virtual y listados en el requirements.txt
-
+Todos las dependencias instaladas en el node_modules y listados en el package.json
 
 ```
 Da un ejemplo
@@ -67,9 +66,9 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [FastAPI](https://fastapi.tiangolo.com/) - El framework web usado para Backend
-* [PIP](https://pip.pypa.io/en/stable/user_guide/) - Manejador de dependencias
-
+* [EXPRESS](https://expressjs.com/) - El framework web usado para Backend
+* [NPM](https://www.npmjs.com/) - Manejador de dependencias
+* [CLOUDINARY](https://cloudinary.com/) - Servidor de Imagenes 
 * [POSTGRESQL](https://www.postgresql.org/docs/) - Motor de la base de datos
 
 ## Contribuyendo 🖇️
@@ -82,21 +81,21 @@ Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](ht
 
 ## Versionado 📌
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/The-Mentalist-API/tags).
 
 ## Autores ✒️
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
 * **Daniel Agudelo** - *Tutor del proyecto* - [DanielDev87](https://github.com/DanielDev87)
-* **Adriana Vasquez** - *Backend* - [apvasquezo](https://github.com/apvasquezo)
-* **Elizabeth Escobar** - *Frontend* - [ElizabethEscobar04](https://github.com/ElizabethEscobar04)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/DanielDev87/risk_management/graphs/contributors) quíenes han participado en este proyecto. 
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/DanielDev87/The-Mentalist-API/graphs/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+El creador de la serie es Bruno Heller
+Este proyecto está bajo la Licencia (DanielDev87) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 ## Expresiones de Gratitud 🎁
 
