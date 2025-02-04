@@ -17,7 +17,7 @@ Postgresql
 Todos las dependencias instaladas en el node_modules y listados en el package.json
 
 ```
-Da un ejemplo
+npx nodemon server.js
 ```
 
 ### Instalación 🔧
