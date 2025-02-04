@@ -23,10 +23,10 @@ module.exports = new EntitySchema({
         },
     },
     relations: {
-        equipo: {
+        team: {
             type: 'many-to-one', // Un personaje pertenece a un solo equipo
-            target: 'Equipo', // Relaciona con la entidad Equipo
-            joinColumn: { name: 'equipo_id' },
+            target: 'Team', // Relaciona con la entidad Equipo
+            joinColumn: { name: 'team_id' },
             nullable: true, // Un personaje puede no pertenecer a un equipo
         },
     },

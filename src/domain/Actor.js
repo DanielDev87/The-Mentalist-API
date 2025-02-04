@@ -27,7 +27,7 @@ module.exports = new EntitySchema({
         },
     },
     relations: {
-        character: {
+        characters: {
             type: 'many-to-one', // Un actor puede interpretar muchos personajes
             target: 'Character', // Relaciona con la entidad Character
             joinColumn: { name: 'character_id' },

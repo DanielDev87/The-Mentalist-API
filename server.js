@@ -9,7 +9,13 @@ app.get("/", (req, res) => {
 });
 //Importar rutas de entrypoints
 const characterRoutes = require("./src/entrypoints/characterRoutes");
-app.use("/api", characterRoutes);
+app.use("/api/v1", characterRoutes);
+
+const teamRoutes = require("./src/entrypoints/teamRoutes");
+app.use("/api/v1", teamRoutes);
+
+const actorRoutes = require("./src/entrypoints/actorRoutes");
+app.use("/api/v1", actorRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

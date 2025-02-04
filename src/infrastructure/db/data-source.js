@@ -1,6 +1,9 @@
 require("dotenv").config();
 const { DataSource } = require("typeorm");
-const Character = require("../../domain/Character")
+const Character = require("../../domain/Character");
+const Chapter = require("../../domain/Chapter");
+const Team = require("../../domain/Team");
+const Actor = require("../../domain/Actor");
 
 const AppDataSource = new DataSource({
     type: "postgres",
@@ -11,7 +14,7 @@ const AppDataSource = new DataSource({
     database: process.env.DB_NAME || "mentalist_db",
     synchronize: true,
     logging: false,
-    entities: [Character],
+    entities: [Character, Team, Chapter, Actor],
 });
 
 AppDataSource.initialize()

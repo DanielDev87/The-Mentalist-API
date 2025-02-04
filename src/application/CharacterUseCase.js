@@ -4,7 +4,10 @@ class CharacterUseCase {
     }
 
     async createCharacter(characterData) {
-      if (!characterData.name || !characterData.description) {
+      if (!characterData.name || !characterData.description || ! characterData.team) {
+        const team = await this.characterRepository.FindTeamById(characterData.team.id);
+        if (!team) throw new Error("Equipo no encontrado");
+        characterData.team = team;
         throw new Error("El nombre y la descripción del personaje son obligatorias");
       }
       const newCharacter = await this.characterRepository.createCharacter(characterData);
